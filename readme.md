@@ -1,1 +1,3 @@
-LET'S GET THIS BREAD
+# About 
+
+Our submitted files for the business track of the [2019 NBA Hackathon](https://hackathon.nba.com/). Given a dataset of Instragram posts (time posted, description, followers at time of posting, and type), we predicted engagement with a 3.08% MAPE on the test set. Applicants were ranked by MAPE on a private holdout set. Feature engineering included splititng timestamps into categorical variables then appling sin / cos transformations, extracting number of mentions and hashtags from description, and using SPPMI to embed descriptions. The hyperparameters for the final XGBoost model were found with Bayesian optimization (hyperopt). 
